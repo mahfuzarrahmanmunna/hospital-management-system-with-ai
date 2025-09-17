@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "./components/Navbar/Navbar";
 import { Toaster } from "sonner";
+import AnimatedCursor from "react-animated-cursor";
+import Footer from "./components/Navbar/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,9 +30,26 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-stone-950 text-stone-800 dark:text-stone-200 min-h-screen flex flex-col`}
       >
-
+        <AnimatedCursor
+          showSystemCursor={true}
+          color="#fff"
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={1.7}
+          outerAlpha={0}
+          outerStyle={{
+            border: "2px solid rgba(0,150,255,0.8)",
+            backgroundColor: "transparent",
+            borderRadius: "50%",
+          }}
+          innerStyle={{
+            backgroundColor: "rgba(0,150,255,1)",
+            borderRadius: "50%",
+          }}
+        />
 
         <ThemeProvider
           attribute="class"
@@ -38,11 +57,17 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+      
           <Navbar />
-          <main>
+
+        
+          <main className="flex-grow">
             {children}
             <Toaster />
           </main>
+
+          
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
