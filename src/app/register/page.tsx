@@ -78,7 +78,7 @@ const RegisterPage = () => {
                         alt="Hospital"
                         height={800}
                         width={600}
-                        fill
+                        // fill
                         className="object-cover"
                         priority
                     />
@@ -137,7 +137,7 @@ const RegisterPage = () => {
                                 <Label>Address</Label>
                                 <Input {...register("address")} />
                             </div>
-                            <div className="flex justify-between gap-4">
+                            <div className="md:flex space-y-5 justify-between gap-4">
                                 <div>
                                     <Label>Blood Group</Label>
                                     <Controller
