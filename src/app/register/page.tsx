@@ -74,9 +74,9 @@ const RegisterPage = () => {
                 </div>
                 <figure className="w-full h-full relative">
                     <Image
-                        src="/hospital-register.png"
+                        src="https://i.ibb.co.com/TqRPGNxk/OQ6-UTW0-removebg-preview.png"
                         alt="Hospital"
-                        height={800}
+                        height={1000}
                         width={600}
                         // fill
                         className="object-cover"

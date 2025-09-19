@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Navbar from "./components/Navbar/Navbar";
 import { Toaster } from "sonner";
 import AnimatedCursor from "react-animated-cursor";
-import Footer from "./components/Navbar/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

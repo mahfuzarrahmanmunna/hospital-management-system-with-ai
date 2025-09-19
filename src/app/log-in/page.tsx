@@ -40,7 +40,7 @@ const LoginPage = () => {
     return (
         <div className="flex min-h-screen bg-stone-50 dark:bg-stone-900 transition-colors duration-300">
             {/* Left side */}
-            <div className="hidden md:flex w-1/2 relative bg-stone-100 dark:bg-stone-800 transition-colors duration-300 items-center justify-center">
+            <div className="hidden md:flex w-1/2 relative bg-stone-50 dark:bg-stone-800 transition-colors duration-300 items-center justify-center">
                 <div className="absolute top-20 left-16 max-w-md z-10">
                     <h1 className="text-4xl font-extrabold text-stone-900 dark:text-stone-100 mb-4">
                         Welcome Back
@@ -50,7 +50,7 @@ const LoginPage = () => {
                     </p>
                 </div>
                 <Image
-                    src="https://i.ibb.co/FkcWLcFf/3644525.jpg"
+                    src="https://i.ibb.co.com/k2w0frpG/detailed-doctors-nurses-illustrated.png"
                     alt="Hospital Login"
                     fill
                     style={{ objectFit: "contain" }}
